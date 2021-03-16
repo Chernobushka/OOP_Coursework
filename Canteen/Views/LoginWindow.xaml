@@ -1,0 +1,25 @@
+﻿<Window x:Class="Canteen.Views.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Canteen.Views"
+        xmlns:viewmodels="clr-namespace:Canteen"
+        mc:Ignorable="d"
+        Title="Столовая" Height="430" Width="330" ResizeMode="NoResize">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.05*"/>
+            <RowDefinition Height="0.95*"/>
+        </Grid.RowDefinitions>
+        <Button Content="Вход" Grid.Column="0" Grid.Row="0" Command="{Binding LoginWindowCommand}" Style="{StaticResource WindowMenuButtonStyle}">
+        </Button>
+        <Button Content="Регистрация" Grid.Column="1" Grid.Row="0" Command="{Binding RegisterWindowCommand}" Style="{StaticResource WindowMenuButtonStyle}"/>
+        <Frame Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="{Binding CurrentPage}" NavigationUIVisibility="Hidden" BorderThickness="0"></Frame>
+    </Grid>
+</Window>

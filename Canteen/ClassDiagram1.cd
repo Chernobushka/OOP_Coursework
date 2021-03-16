@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Canteen.AddDishToMenuPageViewModel" Collapsed="true">
+    <Position X="20.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAQgACgAIUAAAAAAAAAAAAgAAAAAEAAAAA=</HashCode>
+      <FileName>ViewModels\AddDishToMenuPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.AdminCategoriesPageViewModel" Collapsed="true">
+    <Position X="22" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAQCACAAAAAIEAAABAAEAAAAQAgIAEAAAA=</HashCode>
+      <FileName>ViewModels\AdminCategoriesPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.AdminChangeCategoryPageViewModel" Collapsed="true">
+    <Position X="25.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQCACAAAAAAEQAAAAAAAAAAAEgAQAAAAA=</HashCode>
+      <FileName>ViewModels\AdminChangeCategoryPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.AdminChangeDishPageViewModel" Collapsed="true">
+    <Position X="25.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAKAgAAQAwAACAAAAAAAQAAAAAEBEAAAQAAAAECAA=</HashCode>
+      <FileName>ViewModels\AdminChangeDishPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.AdminDishesPageViewModel" Collapsed="true">
+    <Position X="20.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAAAAAgQQAAQoACABIUAAAAAAAAAIAAABAAAAEAAEAA=</HashCode>
+      <FileName>ViewModels\AdminDishesPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.AdminMenuPageViewModel" Collapsed="true">
+    <Position X="23.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIACAAgAAACQhACAAEQEAAAAQgAAAAAAAQAAAAAAQAA=</HashCode>
+      <FileName>ViewModels\AdminMenuPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.AdminWindowViewModel" Collapsed="true">
+    <Position X="22" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAACAAAAAIAAAACAAAAgAAAgAAAAgAIA=</HashCode>
+      <FileName>ViewModels\AdminWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.LoginPageViewModel" Collapsed="true">
+    <Position X="18.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAIAQAACAEAA=</HashCode>
+      <FileName>ViewModels\LoginPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.LoginWindowViewModel" Collapsed="true">
+    <Position X="22" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAQAAAAAAAAAAAAAAAAAAAEAAAAAAwQAAEI=</HashCode>
+      <FileName>ViewModels\LoginWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.MainWindowViewModel" Collapsed="true">
+    <Position X="23.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAACAAAAAQAAAAAgAAAQAAQAFQgEAAYI=</HashCode>
+      <FileName>ViewModels\MainWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.MenuPageViewModel" Collapsed="true">
+    <Position X="23.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAECRAACAAAAAEAAAABABAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MenuPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.MyOrdersPageViewModel" Collapsed="true">
+    <Position X="18.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GAEAAAAAAAAQAACACAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MyOrdersPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.NewOrderPageViewModel" Collapsed="true">
+    <Position X="20.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAgAAAGQgBCBBAAQBAAIAgAACAAABwAAIAIAAAA=</HashCode>
+      <FileName>ViewModels\NewOrderPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.RegisterPageViewModel" Collapsed="true">
+    <Position X="25.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAQCAAAAAAAAAAAAIAAAACAAQAACAAAAAA=</HashCode>
+      <FileName>ViewModels\RegisterPageViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.ViewModelBase" Collapsed="true">
+    <Position X="26.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ViewModelBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Canteen.Models.Category">
+    <Position X="28.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Category.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Dishes" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Canteen.Models.DataContext" Collapsed="true">
+    <Position X="38" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAACAAABAAAAAAABQAAAAAGAAAEAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\DataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.Models.Dish">
+    <Position X="28.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAAAAQAgAAAAABAAAAQACCAAABAAAAAAAAAACAA=</HashCode>
+      <FileName>Models\Dish.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="OrderDetails" />
+      <Property Name="MenuDetails" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Canteen.Models.Menu" BaseTypeListCollapsed="true">
+    <Position X="30.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAACAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Menu.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="MenuDetails" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Canteen.Models.MenuDetail">
+    <Position X="33.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAgAAAAAAAAAAQAAEAIBBAAAAAAACAACAA=</HashCode>
+      <FileName>Models\MenuDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.Models.Order">
+    <Position X="30.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAQAAAAAAABAAAAwAAAAAAAABAAQAAAAAAAA=</HashCode>
+      <FileName>Models\Order.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="OrderDetails" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Canteen.Models.OrderDetail">
+    <Position X="33.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAECAAAAAQAgAAAAAAAAAAQAAEAAABAAAAAAACAAAAA=</HashCode>
+      <FileName>Models\OrderDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Canteen.Models.User">
+    <Position X="35" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAIAACAAAAAAAAAAAAQAAAAAAAgCAAAQAAAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Orders" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Canteen.Models.UserRole">
+    <Position X="35" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACACAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\UserRole.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Users" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

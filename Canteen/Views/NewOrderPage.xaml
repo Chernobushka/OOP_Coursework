@@ -1,0 +1,85 @@
+﻿<Page x:Class="Canteen.Views.NewOrderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Canteen.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="665"
+      Title="NewOrderPage">
+    <Page.Resources>
+
+        
+        <Style TargetType="Button">
+            
+            <Setter Property="Background" Value="LightGray"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+
+        <DataTemplate x:Key="MenuListBoxItem">
+            <Grid>
+                <Expander>
+                    <Expander.Header>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="0.9*"/>
+                                <ColumnDefinition Width="0.1*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="{Binding Name}" Grid.Column="0"/>
+                            <DockPanel  Grid.Column="1">
+                                <TextBlock Text="{Binding Price}"/>
+                                <TextBlock Text=" рублей"/>
+                            </DockPanel>
+                        </Grid>
+                    </Expander.Header>
+                    <StackPanel>
+                        <Image Width="250" Height="250" Source="{Binding Image}" HorizontalAlignment="Center"></Image>
+                        <TextBlock Text="{Binding Description}"/>
+                    </StackPanel>
+                </Expander>
+                
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="325"/>
+            <ColumnDefinition Width="325"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"></RowDefinition>
+            <RowDefinition Height="0.05*"></RowDefinition>
+            <RowDefinition Height="0.65*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.05*"/>
+            <RowDefinition Height="0.05*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.ColumnSpan="2" Content="Новый заказ" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24"></Label>
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Меню на сегодня" HorizontalAlignment="Center"></TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="Текущий заказ" HorizontalAlignment="Center"></TextBlock>
+
+        <ListBox x:Name="Menu" Grid.Row="2" Grid.Column="0" ItemsSource="{Binding CurrentMenuView}" SelectedItem="{Binding SelectedMenuItem}" Style="{StaticResource MenuListBox}">
+            <ListBox.GroupStyle>
+                <GroupStyle HeaderTemplate="{StaticResource GroupStyleHeader}"/>
+            </ListBox.GroupStyle>
+        </ListBox>
+        <ListBox x:Name="Order" Grid.Row="2" Grid.Column="2" ItemsSource="{Binding NewOrderView}" SelectedItem="{Binding SelectedDish}" SelectionMode="Single" Style="{StaticResource MenuListBox}">
+            <ListBox.GroupStyle>
+                <GroupStyle HeaderTemplate="{StaticResource GroupStyleHeader}"/>
+            </ListBox.GroupStyle>
+        </ListBox>
+        <Button Grid.Row="4" Grid.Column="0" Grid.RowSpan="2" Content="Добавить к заказу" Command="{Binding AddDishCommand}" Style="{StaticResource PageButtonStyle}"/>
+        <Button Grid.Row="4" Grid.Column="2" Content="Удалить из заказа" Command="{Binding DeleteDishCommand}" Style="{StaticResource PageButtonStyle}"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Center" Text="Стоимость текущего заказа: "></TextBlock>
+        <DockPanel Grid.Row="3" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBlock  Text="{Binding OrderPrice}"></TextBlock>
+            <TextBlock Text=" рублей"/>
+        </DockPanel>
+        <Button Grid.Column="2" Grid.Row="5" Content="Сохранить заказ" Command="{Binding SaveOrderCommand}" Style="{StaticResource PageButtonStyle}"/>
+
+    </Grid>
+</Page>
